@@ -1,16 +1,16 @@
-/* Colores */
+/* style.css */
 :root {
-    --azul-oscuro: #003366;
-    --amarillo: #FFD700;
-    --negro: #000000;
-    --blanco: #FFFFFF;
+    --primary-color: #0b0147; /* Azul predominante */
+    --secondary-color: #afae02; /* Amarillo */
+    --light-color: #ffffff;
+    --dark-color: #000000;
 }
 
 body {
     font-family: sans-serif;
     margin: 0;
-    background-color: var(--blanco);
-    color: var(--negro);
+    color: var(--dark-color);
+    background-color: var(--light-color); /* Fondo blanco */
 }
 
 .container {
@@ -19,15 +19,234 @@ body {
     padding: 0 20px;
 }
 
-/* Cabecera */
+/* Header */
 header {
-    background-color: var(--azul-oscuro);
-    color: var(--blanco);
+    background-color: var(--primary-color); 
+    color: var(--light-color);
     padding: 20px 0;
 }
 
+/* ... (resto de los estilos, ajustando los colores según corresponda) ... */
+
+.btn {
+    /* ... otros estilos ... */
+    background-color: var(--secondary-color);
+    color: var(--primary-color); 
+}
+
+.btn:hover {
+    background-color: darken(var(--secondary-color), 10%);
+}
+
+.service i {
+    /* ... otros estilos ... */
+    color: var(--secondary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    /* ... otros estilos ... */
+}
+
+.social-media a {
+    color: var(--light-color);
+    /* ... otros estilos ... */
+}
+/* ... (estilos anteriores de index.html) ... */
+
+/* Servicios - Página específica */
+.services-page {
+    padding: 40px 0;
+    background-color: var(--light-color); /* Fondo blanco para esta página */
+    color: var(--dark-color); /* Texto en negro */
+}
+
+.services-page h2 {
+    color: var(--primary-color); /* Título en azul */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.services-page .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.services-page .service {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra sutil para resaltar las cajas */
+    transition: transform 0.3s; /* Transición suave al pasar el mouse */
+}
+
+.services-page .service:hover {
+    transform: translateY(-5px); /* Elevamos ligeramente la caja al pasar el mouse */
+}
+
+.services-page .service i {
+    font-size: 3em;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.services-page .service h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.services-page .service p {
+    line-height: 1.6;
+}
+/* ... (estilos anteriores de index.html y servicios.html) ... */
+
+/* Proyectos - Página específica */
+.projects-page {
+    padding: 40px 0;
+    background-color: var(--light-color); 
+    color: var(--dark-color); 
+}
+
+.projects-page h2 {
+    color: var(--primary-color); 
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.projects-page .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta el tamaño mínimo de las columnas según tus necesidades */
+    gap: 20px;
+}
+
+.projects-page .project {
+    text-align: center;
+}
+
+.projects-page .project img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.projects-page .project h3 {
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.projects-page .project p {
+    line-height: 1.6;
+}
+
+.projects-page .btn {
+    display: block; /* Para centrar el botón */
+    margin: 30px auto 0; /* Margen superior automático para centrarlo verticalmente */
+    width: fit-content; /* Para que el botón se ajuste al contenido */
+}
+/* ... (estilos anteriores de index.html, servicios.html y proyectos.html) ... */
+
+/* Sobre Nosotros - Página específica */
+.about-us-page {
+    padding: 40px 0;
+    background-color: var(--light-color); 
+    color: var(--dark-color); 
+}
+
+.about-us-page h2 {
+    color: var(--primary-color); 
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Espacio entre el texto y la imagen */
+}
+
+.about-content .text {
+    flex: 2; /* El texto ocupa 2/3 del espacio */
+}
+
+.about-content .image {
+    flex: 1; /* La imagen ocupa 1/3 del espacio */
+}
+
+.about-content .image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+/* ... (estilos anteriores de index.html, servicios.html y proyectos.html) ... */
+
+/* Contacto - Página específica */
+.contact-page {
+    padding: 40px 0;
+    background-color: var(--light-color); 
+    color: var(--dark-color); 
+}
+
+.contact-page h2 {
+    color: var(--primary-color); 
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-content {
+    display: flex;
+    align-items: flex-start; /* Alineamos los elementos al inicio verticalmente */
+    gap: 30px;
+}
+
+.contact-content .form {
+    flex: 2;
+}
+
+.contact-content .contact-info {
+    flex: 1;
+}
+
+.contact-page input, .contact-page textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-page .btn {
+    background-color: var(--secondary-color);
+    color: var(--primary-color); 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-page .btn:hover {
+    background-color: darken(var(--secondary-color), 10%);
+}
+
+/* ... otros estilos ... */
+
+header {
+    background-color: var(--primary-color); 
+    color: var(--light-color);
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .logo img {
-    max-height: 80px;
+    max-height: 80px; /* Ajusta la altura máxima del logo según tus necesidades */
 }
 
 nav ul {
@@ -35,7 +254,6 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: flex-end;
 }
 
 nav li {
@@ -43,8 +261,30 @@ nav li {
 }
 
 nav a {
-    color: var(--blanco);
+    color: var(--light-color);
     text-decoration: none;
+    transition: color 0.3s;
 }
 
-/* ... (resto del CSS para las demás secciones) */
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+/* ... otros estilos ... */
+
+/* ... otros estilos ... */
+
+nav a.active {
+    color: var(--secondary-color); /* Color del enlace activo (amarillo en este caso) */
+    font-weight: bold; 
+}
+/* ... otros estilos ... */
+
+.logo {
+    display: inline-block; /* Para que el enlace se ajuste al tamaño de la imagen */
+}
+
+.logo img {
+    max-height: 80px; /* Ajusta la altura máxima del logo según tus necesidades */
+    vertical-align: middle; /* Alinea verticalmente la imagen al centro del texto */
+}
