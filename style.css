@@ -1,0 +1,50 @@
+/* Colores */
+:root {
+    --azul-oscuro: #003366;
+    --amarillo: #FFD700;
+    --negro: #000000;
+    --blanco: #FFFFFF;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: var(--blanco);
+    color: var(--negro);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Cabecera */
+header {
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+    padding: 20px 0;
+}
+
+.logo img {
+    max-height: 80px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li {
+    margin-left: 30px;
+}
+
+nav a {
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+/* ... (resto del CSS para las demás secciones) */
