@@ -2,22 +2,25 @@
 <html lang="es">
 
 <head>
+    <link rel="stylesheet" href="generales.css">
+    <link rel="stylesheet" href="servicios.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios - Metálicas Díaz</title>
+    <meta name="description"
+        content="Descubre todos los servicios de metalistería que ofrecemos en Metálicas Díaz: puertas, rejas, ventanas, estructuras a medida y soldadura.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <meta name="description" content="Descubre los servicios de Metálicas Díaz: puertas de metal, rejas para ventanas, y estructuras metálicas personalizadas.">
 </head>
 
 <body>
 
     <header>
-        <div class="container">
+        <div class="container header-container">
             <a href="index.html" class="logo">
-                <img src="imagen/logo.png" alt="Metálicas Díaz">  
+                <img src="imagenes/logo-metalicas-diaz.png" alt="Metálicas Díaz"> 
             </a>
-            <nav>
+            <nav class="navbar">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="servicios.html" class="active">Servicios</a></li>
@@ -32,34 +35,83 @@
     <section class="services-page">
         <div class="container">
             <h2>Nuestros Servicios</h2>
-            <div class="service-grid">
-                <div class="service">
-                    <i class="fas fa-door-open"></i> 
-                    <h3>Metal Doors</h3>
-                    <p>Fabricamos puertas de metal de alta calidad, personalizadas según tus necesidades. Durabilidad, seguridad y estilo garantizados.</p>
+
+            <div class="service" id="puertas">
+                <div class="service-image">
+                    <img src="imagenes/puertas-metalicas.jpg" alt="Puertas Metálicas"> 
                 </div>
-                <div class="service">
-                    <i class="fas fa-window-maximize"></i> 
-                    <h3>Window Grilles</h3>
-                    <p>Protege tu hogar con nuestras rejas para ventanas. Diseños elegantes y resistentes para mayor seguridad.</p>
-                </div>
-                <div class="service">
-                    <i class="fas fa-hammer"></i> 
-                    <h3>Custom Structures</h3>
-                    <p>Creamos estructuras metálicas a medida para proyectos residenciales, comerciales e industriales. ¡Cuéntanos tu idea!</p>
+                <div class="service-content">
+                    <h3>Puertas Metálicas</h3>
+                    <p>Fabricamos e instalamos puertas metálicas de alta seguridad para hogares, negocios e industrias. 
+                        Ofrecemos una amplia variedad de diseños, materiales y acabados para adaptarnos a tus necesidades 
+                        y estilo.  Nuestras puertas garantizan la protección de tu propiedad y brindan una estética 
+                        elegante y duradera.</p>
+                    <ul>
+                        <li>Puertas de seguridad</li>
+                        <li>Puertas cortafuego</li>
+                        <li>Puertas de garaje</li>
+                        <li>Puertas automáticas</li>
+                        <li>Diseños personalizados</li>
+                    </ul>
+                    <a href="contacto.html" class="btn">Solicitar Presupuesto</a>
                 </div>
             </div>
+
+            <div class="service" id="rejas">
+                <div class="service-image">
+                    <img src="imagenes/rejas-ventanas.jpg" alt="Rejas para Ventanas">
+                </div>
+                <div class="service-content">
+                    <h3>Rejas para Ventanas</h3>
+                    <p>Protege tu hogar o negocio con nuestras rejas de seguridad para ventanas.  Fabricamos rejas 
+                        a medida con materiales de alta calidad y diseños que se adaptan a la estética de tu propiedad. 
+                        Ofrecemos diferentes tipos de rejas, desde las más sencillas hasta las más elaboradas, 
+                        para garantizar la seguridad y la tranquilidad que necesitas.</p>
+                    <ul>
+                        <li>Rejas fijas</li>
+                        <li>Rejas abatibles</li>
+                        <li>Rejas corredizas</li>
+                        <li>Rejas de seguridad para balcones</li>
+                        <li>Diseños personalizados</li>
+                    </ul>
+                    <a href="contacto.html" class="btn">Solicitar Presupuesto</a>
+                </div>
+            </div>
+
+            <div class="service" id="estructuras">
+                <div class="service-image">
+                    <img src="imagenes/estructuras-metalicas.jpg" alt="Estructuras Metálicas">
+                </div>
+                <div class="service-content">
+                    <h3>Estructuras Metálicas a Medida</h3>
+                    <p>Diseñamos y fabricamos estructuras metálicas a medida para cualquier necesidad.  
+                        Desde techos, escaleras y barandas hasta estructuras para naves industriales y 
+                        locales comerciales.  Nuestro equipo de profesionales te asesorará para encontrar 
+                        la mejor solución para tu proyecto, garantizando la calidad, la seguridad y la 
+                        resistencia de la estructura.</p>
+                    <ul>
+                        <li>Techos metálicos</li>
+                        <li>Escaleras metálicas</li>
+                        <li>Barandas metálicas</li>
+                        <li>Estructuras para naves industriales</li>
+                        <li>Estructuras para locales comerciales</li>
+                    </ul>
+                    <a href="contacto.html" class="btn">Solicitar Presupuesto</a>
+                </div>
+            </div>
+
+
         </div>
     </section>
 
     <footer>
         <div class="container">
             <div class="social-media">
-                <a href="#"><i class="fab fa-facebook-f" aria-label="Facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram" aria-label="Instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in" aria-label="LinkedIn"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
-            <p>&copy; 2024 Metálicas Díaz. Todos los derechos reservados.</p>
+            <p>© 2024 Metálicas Díaz. Todos los derechos reservados.</p>
         </div>
     </footer>
 

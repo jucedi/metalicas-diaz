@@ -1,0 +1,133 @@
+/* style.css - Estilos generales */
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Encabezado */
+  header {
+    background-color: #0b0147;
+    padding: 15px 0;
+    color: #ffffff;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .navbar a.active {
+    font-weight: bold;
+  }
+  
+  /* Botón reutilizable */
+  .btn {
+    background-color: #afae02;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Pie de página */
+  footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .social-media {
+    margin-bottom: 10px;
+  }
+  
+  .social-media a {
+    color: #ffffff;
+    margin: 0 5px;
+    font-size: 1.5rem;
+  }
+  
+  /* Media Queries (puntos de quiebre) */
+  @media (max-width: 960px) { 
+    /* Ajustes para tablets grandes */
+  }
+  
+  @media (max-width: 768px) { 
+    /* Ajustes para tablets */
+    .header-container {
+      flex-direction: column; 
+      align-items: flex-start; 
+    }
+  
+    .navbar ul {
+      margin-top: 10px; 
+    }
+  
+    .navbar li {
+      display: block; 
+      margin-left: 0;
+      margin-bottom: 5px; 
+    }
+  
+    .hero {
+      min-height: 300px;
+    }
+  
+    .services-featured .service-grid,
+    .projects-page .project-grid {
+      grid-template-columns: 1fr; 
+    }
+  
+    .about-us-page .container,
+    .contact-page .container {
+      flex-direction: column;
+    }
+  
+    .about-us-page .about-content,
+    .contact-page .contact-form {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) { 
+    /* Ajustes para móviles pequeños */
+    h2 {
+      font-size: 2rem;
+    }
+  
+    .hero {
+      min-height: 200px;
+    }
+  }

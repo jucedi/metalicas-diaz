@@ -1,0 +1,56 @@
+/* style-contacto.css */
+
+.contact-page {
+    padding: 50px 0;
+    background-color: #ffffff;
+  }
+  
+  .contact-page h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #0b0147;
+  }
+  
+  .contact-form {
+    flex: 1;
+    margin-right: 30px;
+  }
+  
+  .contact-form h3 {
+    color: #0b0147;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .contact-info {
+    flex: 1;
+  }
+  
+  .contact-info h3 {
+    color: #0b0147;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info p {
+    margin-bottom: 10px;
+  }
+  
+  .map {
+    margin-top: 20px;
+  }

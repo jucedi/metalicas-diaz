@@ -2,21 +2,24 @@
 <html lang="es">
 
 <head>
+    <link rel="stylesheet" href="generales.css">
+    <link rel="stylesheet" href="contacto.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - Metálicas Díaz</title>
+    <meta name="description" content="Contacta con Metálicas Díaz para solicitar un presupuesto o resolver tus dudas.">
     <link rel="stylesheet" href="style.css">
-    <meta name="description" content="Ponte en contacto con Metálicas Díaz para solicitar nuestros servicios de metalurgia o resolver cualquier duda. Estamos aquí para ayudarte.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
 
     <header>
-        <div class="container">
+        <div class="container header-container">
             <a href="index.html" class="logo">
-                <img src="imagen/logo.png" alt="Metálicas Díaz">
+                <img src="imagenes/logo-metalicas-diaz.png" alt="Metálicas Díaz"> 
             </a>
-            <nav>
+            <nav class="navbar">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="servicios.html">Servicios</a></li>
@@ -28,44 +31,52 @@
         </div>
     </header>
 
-    <main>
-        <section class="contact-page">
-            <div class="container">
-                <h2>Contacto</h2>
-                <div class="contact-content">
-                    <div class="form">
-                        <form>
-                            <label for="name">Nombre</label>
-                            <input type="text" id="name" placeholder="Nombre" required>
-                            
-                            <label for="email">Email</label>
-                            <input type="email" id="email" placeholder="Email" required>
-                            
-                            <label for="message">Mensaje</label>
-                            <textarea id="message" placeholder="Mensaje" required></textarea>
-                            
-                            <button type="submit" class="btn">Enviar</button>
-                        </form>
+    <section class="contact-page">
+        <div class="container">
+            <h2>Contacto</h2>
+
+            <div class="contact-form">
+                <h3>Envíanos un mensaje</h3>
+                <form action="procesar-formulario.php" method="post"> 
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
                     </div>
-                    <div class="contact-info">
-                        <h3>Información de Contacto</h3>
-                        <p>Dirección: Calle 123, Bogotá, Colombia</p>
-                        <p>Teléfono: +57 123 456 7890</p>
-                        <p>Email: contacto@metalicasdiaz.com</p>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
                     </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Enviar</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <h3>Información de contacto</h3>
+                <p><strong>Dirección:</strong> [Dirección del taller]</p>
+                <p><strong>Teléfono:</strong> [Número de teléfono]</p>
+                <p><strong>Email:</strong> [Correo electrónico]</p>
+                <div class="map"> 
+                    <iframe src="[Enlace del mapa de Google Maps]" width="100%" height="300" 
+                        style="border:0;" allowfullscreen="" loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-        </section>
-    </main>
+
+        </div>
+    </section>
 
     <footer>
         <div class="container">
             <div class="social-media">
-                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
-            <p>&copy; 2024 Metálicas Díaz. Todos los derechos reservados.</p>
+            <p>© 2024 Metálicas Díaz. Todos los derechos reservados.</p>
         </div>
     </footer>
 

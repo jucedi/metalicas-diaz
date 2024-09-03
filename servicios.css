@@ -1,0 +1,42 @@
+/* style-servicios.css */
+
+.services-page {
+    padding: 50px 0;
+    background-color: #ffffff;
+  }
+  
+  .services-page h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #0b0147;
+  }
+  
+  .service {
+    display: flex;
+    margin-bottom: 50px;
+  }
+  
+  .service-image {
+    flex: 1;
+    margin-right: 30px;
+  }
+  
+  .service-image img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .service-content {
+    flex: 2;
+  }
+  
+  .service-content h3 {
+    color: #0b0147;
+    margin-bottom: 15px;
+  }
+  
+  .service-content ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
