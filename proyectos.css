@@ -3,35 +3,198 @@
 .projects-page {
     padding: 50px 0;
     background-color: #ffffff;
-  }
-  
-  .projects-page h2 {
+}
+
+.projects-page h2 {
     text-align: center;
     margin-bottom: 30px;
     color: #0b0147;
-  }
-  
-  .project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-  }
-  
-  .project {
-    border: 1px solid #ddd;
+}
+
+/* Contenedor principal del carrusel */
+.swiper {
+    width: 100%;
+    height: auto;
+    padding-bottom: 40px; /* Espacio para la paginación */
+}
+
+/* Estilo para cada tarjeta de proyecto, ya lo tenías y está bien */
+.project {
+    border: 1px solid #ddd;box-shadow: 0 2px 10px rgba(10, 10, 10, 0.5);
     border-radius: 5px;
     padding: 20px;
     text-align: center;
-  }
-  
-  .project img {
+    /* Aseguramos que ocupe todo el alto del slide */
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project img {
     width: 100%;
-    height: auto;
-    border-radius: 5px;
+    height: 200px; /* Damos una altura fija para consistencia */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */
+    border-radius: 5px;box-shadow: 0 2px 10px rgba(10, 10, 10, 0.5);
     margin-bottom: 15px;
-  }
-  
-  .project h3 {
+}
+
+.project h3 {
     color: #0b0147;
     margin-bottom: 10px;
-  }
+}
+
+/* Estilos para las flechas de navegación de Swiper */
+.swiper-button-next, .swiper-button-prev {
+    color: #0b0147; /* Cambia el color de las flechas */
+}
+
+/* Estilos para los puntos de paginación */
+.swiper-pagination-bullet-active {
+    background-color: #0b0147; /* Cambia el color del punto activo */
+}
+
+/* ============================================= */
+/* ========= ESTILOS SECCIÓN TINY HOUSES ========= */
+/* ============================================= */
+
+/* Estilos generales para la sección */
+.project-section {
+    font-family: sans-serif; /* Puedes cambiar la fuente a la de tu marca */
+    padding: 60px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.intro-text {
+    max-width: 700px;
+    margin: 15px auto 40px auto;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Estilos de la galería de imágenes */
+.gallery-container {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.image-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos de las características */
+.features-section {
+    padding-top: 50px;
+    text-align: left;
+}
+
+.features-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features-section li {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Estilos de la sección de modelos */
+.models-container {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.models-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.model-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.model-card:hover {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.model-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.model-card h4 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+/* Estilos para los botones y CTA */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+.cta-section {
+    background-color: #333;
+    color: #fff;
+    padding: 60px 20px;
+}
+
+.cta-section h3 {
+    font-size: 2em;
+}
+
+.cta-section .btn-primary {
+    background-color: #007bff; /* Un color primario para destacar */
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.cta-section .btn-primary:hover {
+    background-color: #0056b3;
+}

@@ -54,3 +54,15 @@
   .map {
     margin-top: 20px;
   }
+  /* Estilos para los mensajes de error de validación */
+.error-mensaje {
+    color: #d93025; /* Un color rojo para errores */
+    font-size: 0.875em; /* Un poco más pequeño que el texto normal */
+    margin-top: 5px;
+    height: 1em; /* Le damos una altura fija para que no mueva el diseño */
+}
+
+/* Estilo para el borde del campo cuando hay un error */
+.campo-error {
+    border-color: #d93025 !important; /* !important para asegurar que sobreescriba otros estilos */
+}

@@ -39,30 +39,35 @@
                 <h3>Envíanos un mensaje</h3>
                 <form action="procesar-formulario.php" method="post"> 
                     <div class="form-group">
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" required>
-                    </div>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+    <div id="error-nombre" class="error-mensaje"></div>
+</div>
                     <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <div id="error-email" class="error-mensaje"></div>
+</div>
                     <div class="form-group">
                         <label for="mensaje">Mensaje:</label>
                         <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
                     </div>
+                    <div class="form-group">
+    <label for="telefono">Teléfono :</label>
+    <input type="tel" id="telefono" name="telefono">
+    <div id="error-telefono" class="error-mensaje"></div>
+</div>
                     <button type="submit" class="btn">Enviar</button>
                 </form>
             </div>
 
             <div class="contact-info">
                 <h3>Información de contacto</h3>
-                <p><strong>Dirección:</strong> [Dirección del taller]</p>
-                <p><strong>Teléfono:</strong> [Número de teléfono]</p>
-                <p><strong>Email:</strong> [Correo electrónico]</p>
+                <p><strong>Dirección:</strong> cra 35c # 33b-04 Giron santander</p>
+                <p><strong>Teléfono:</strong> 3152724688</p>
+                <p><strong>Email:</strong> CORREO</p>
                 <div class="map"> 
-                    <iframe src="[Enlace del mapa de Google Maps]" width="100%" height="300" 
-                        style="border:0;" allowfullscreen="" loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.484115388734!2d-73.18043802415083!3d7.069731516573069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e684744ca8e6fa5%3A0x56ed7c29d7575a2f!2zTWV0w6FsaWNhcyBEw61heg!5e0!3m2!1ses-419!2sco!4v1750015827269!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
 
@@ -72,14 +77,17 @@
     <footer>
         <div class="container">
             <div class="social-media">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/metaldiazu/?locale=es_LA" target="_blank"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
-            <p>© 2024 Metálicas Díaz. Todos los derechos reservados.</p>
+            <p>© 2025 Metálicas Díaz. Todos los derechos reservados.</p>
         </div>
     </footer>
-
+<a href="https://wa.me/573152724688" class="whatsapp-flotante" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+<script src="scripts.js"></script>
 </body>
 
 </html>
